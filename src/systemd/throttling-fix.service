@@ -1,0 +1,12 @@
+[Unit]
+Description=Resolve throttling issues on some laptops
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/throttling-fix
+TimeoutSec=0
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
