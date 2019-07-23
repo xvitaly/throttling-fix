@@ -18,9 +18,14 @@ Use with extremely caution! Incorrect usage can destroy your system.
 sudo dnf copr enable xvitaly/ecrepo
 ```
 
-2. Enable systemd unit:
+2. Install package:
+```
+sudo dnf install throttling-fix-t480
+```
+
+3. Enable systemd unit:
 ```
 sudo systemctl enable --now throttling-fix-t480.service
 ```
 
-3. Reboot.
+4. Reboot.
